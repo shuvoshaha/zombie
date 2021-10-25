@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+/*===== Header =========*/
+
+.header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.main_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/*====== navbar ============*/
+.navbar {
+    background: rgba(0, 0, 0, 0.2);
+
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    font-weight: 500;
+}
+
+.navbar-nav {}
+
+.navbar-nav .nav-item {
+    margin-left: 4rem;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 0.875rem !important;
+    font-weight: 400 !important;
+    transition: 0.3s ease-out;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.navbar-nav .nav-link:hover {
+    background: #fff !important;
+    color: #000 !important;
+
+}
+
+/*======= Hero =========*/
+.hero {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.hero div {
+    text-align: center;
+}
+
+.hero h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.hero h3 {
+
+    font-size: 2rem;
+    color: red;
+    background: #fff;
+    padding: 10px;
+    font-weight: 600;
+    margin: 1.2rem 0;
+    border-radius: 2px;
+}
+
+.hero h4 a {
+    color: #dfdfdf;
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: 0.3s ease-out;
+}
+
+.hero h4 a:hover {
+    color: #fff;
+}
+
+.hero p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/*======== About Us ==========*/
+
+.about_us {
+    background: #252d42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.about_inner {}
+
+.left_ab_portion {
+    max-width: 80%;
+    margin: auto;
+}
+
+.left_ab_portion h2 {
+    text-align: center;
+    color: #fff;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    font-weight: 600;
+}
+
+.left_ab_portion p {
+    color: #fff;
+    margin-top: 2rem;
+    position: relative;
+    font-size: 0.975rem;
+    display: block;
+}
+
+.left_ab_portion p::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    top: 5px;
+}
+
+
+.aboleft_ab_portion p a {}
+
+/*========== Roadmap =========*/
+
+.roadmap {
+    background: #252d42;
+
+}
+
+.sub_header {
+    text-align: center;
+    font-size: clamp(1rem, 4vw, 2rem);
+    font-weight: 600;
+    color:  #fff;
+}
+
+.roadmap_inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+.single_road {
+    width: 30%;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    padding: 10px;
+    height: auto;
+    margin: 0 1rem 2rem;
+    border-radius: 5px;
+    background: #2b3348;
+}
+
+.single_road span {
+
+    padding: 10px;
+    background: #000;
+    border-radius: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+.single_road h5 {
+
+font-size: 0.975rem;
+margin: 1rem 0 8px;
+text-align: left;
+line-height: 1.2;
+color: #fff;
+}
+
+.single_road p {
+    font-size: 0.875rem;
+    line-height: 1.3;
+    color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+    .single_road {
+        width: 45% ;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .single_road {
+        width: 90%;
+    }
+}
+
+/*========== Rarity ==========*/
+.rarity{
+    background: #252d42;
+
+}
+
+.rarity_inner{
+    
+display: flex;
+    
+padding: 2rem 0;
+    
+margin: auto;
+    
+width: 100%;
+    
+justify-content: center;
+}
+
+.rarity_inner ul{
+} 
+
+.rarity_inner li{
+    
+color: #fff;
+    
+font-size: 0.975rem;
+}
+
+
+/*======== Accordian =========*/
+.accordion_section{
+    background: #252d42;
+}
+
+#accordion{
+    margin-top: 2rem !important;
+}
+
+.card-header{
+    background: #3e4d72  !important;
+}
+
+.card-header button{
+    color: #fff !important;
+}
+
+.card{
+ border: none !important;
+}
